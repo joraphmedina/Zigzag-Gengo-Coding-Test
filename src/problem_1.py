@@ -9,7 +9,7 @@ def is_palindrome(input):
     if type(input) != str:
         return False
 
-    # The specification says non-empty string, so we need to immediately return False for 0 length
+    # Return False for 0 length
     if len(input) == 0:
         return False
 
@@ -20,7 +20,7 @@ def is_palindrome(input):
     # Convert everything to lower case to allow checking.
     input = input.lower()
 
-    # Remove whitespace characters to allow checking for phrases / palindromes with spaces
+    # Remove whitespace characters
     input = input.replace(' ', '')
 
     # Reverse the string here
